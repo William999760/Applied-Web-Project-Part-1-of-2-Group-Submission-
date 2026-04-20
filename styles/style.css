@@ -123,3 +123,45 @@ footer {
   float: left;
   margin-right: 15px;
 }
+
+h2,h3,h4 {
+    text-align: left;
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: black;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+ol, ul, dl {
+    text-align: left;
+    list-style-type: square;
+}
+
+h1, h2, h3, h4 { font-family: calibri, sans-serif; } 
+
+.menu {
+    display: inline-block;
+    padding : 10px;
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 2em; 
+    font-weight: bold; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: gray;
+    margin: 0px;
+    padding: 20px;
+
+}
+#logo {
+   float: top;
+  text-align: left;
+}
