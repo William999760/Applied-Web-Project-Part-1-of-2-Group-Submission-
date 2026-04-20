@@ -1,0 +1,125 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f9f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #1b5e20;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* MAIN */
+main {
+  padding: 30px;
+}
+
+/* INTRO */
+.intro {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-left: 6px solid #43a047;
+  margin-bottom: 30px;
+}
+
+/* GRID LAYOUT */
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* JOB CARD */
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  margin: 10px 0;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  background-color: #e8f5e9;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+}
+
+/* BUTTON */
+.apply-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #43a047;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.apply-btn:hover,
+.apply-btn:focus {
+  background-color: #2e7d32;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+ .logo {
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+}
