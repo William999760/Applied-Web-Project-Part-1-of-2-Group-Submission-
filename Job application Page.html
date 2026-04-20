@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+
+   
+   
+</head>
+
+<body>
+
+<!-- Navigation menu -->
+<nav>
+    <p class="menu"><a href="index.html">Home</a></p> 
+    <p class="menu"><a href="jobs.html">Job Description</a></p> 
+    <p class="menu"><a href="about.html">About</a></p> 
+</nav>
+
+<!-- logo -->
+<h1>Green Leaf Energy</h1>
+<img src="greenleaflogo copy.png" 
+     alt="Green Leaf Energy Logo"
+     width="400">
+
+<h1>Job Application Form</h1>
+
+<!-- Form uses POST method to send data to server -->
+<form method="POST" action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+<!-- Job reference number -->
+<label for="jobref">Job Reference Number:</label>
+<input type="text" id="jobref" name="jobref" required
+       pattern="[A-Za-z0-9]{5}"
+       title="Exactly 5 letters or numbers"><br><br>
+
+<!-- Personal information -->
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <!-- First name: letters only -->
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required
+           maxlength="20"
+           pattern="[A-Za-z]+"><br><br>
+
+    <!-- Last name-->
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required
+           maxlength="20"
+           pattern="[A-Za-z]+"><br><br>
+
+    <!-- Date of birth and format  -->
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="dob" required
+           pattern="\d{2}/\d{2}/\d{4}"
+           placeholder="dd/mm/yyyy"><br><br>
+</fieldset>
+
+<!-- Gender radio buttons -->
+<fieldset>
+    <legend>Gender</legend>
+
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+</fieldset><br>
+
+<!-- Contact information -->
+<fieldset>
+    <legend>Contact Information</legend>
+
+    <!-- Address fields and length validation -->
+    <label for="address">Street Address:</label>
+    <input type="text" id="address" name="address" required maxlength="40"><br><br>
+
+    <label for="suburb">Suburb/Town:</label>
+    <input type="text" id="suburb" name="suburb" required maxlength="40"><br><br>
+
+    <!-- State dropdown box -->
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+        <option value="">Select State</option>
+        <option value="VIC">VIC</option>
+        <option value="NSW">NSW</option>
+        <option value="QLD">QLD</option>
+        <option value="NT">NT</option>
+        <option value="WA">WA</option>
+        <option value="SA">SA</option>
+        <option value="TAS">TAS</option>
+        <option value="ACT">ACT</option>
+    </select><br><br>
+
+    <!-- Postcode  -->
+    <label for="postcode">Postcode:</label>
+    <input type="text" id="postcode" name="postcode" required
+           pattern="\d{4}"><br><br>
+
+    <!-- Phone number -->
+    <label for="phonenumber">Phone Number:</label>
+    <input type="text" id="phonenumber" name="phonenumber" required
+           pattern="\d{8,12}"
+           title="8 to 12 digits"><br><br>
+
+    <!-- Email  -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+</fieldset>
+
+<!-- Skills section -->
+<fieldset>
+    <legend>Applicant Skills</legend>
+
+    <!-- Checkbox inputs that allow multiple selections -->
+    <input type="checkbox" id="teamwork" name="skills[]" value="teamwork">
+    <label for="teamwork">Teamwork</label>
+
+    <input type="checkbox" id="coding" name="skills[]" value="coding">
+    <label for="coding">Coding</label>
+
+    <input type="checkbox" id="frontend" name="skills[]" value="frontend">
+    <label for="frontend">Frontend Development</label>
+
+    <input type="checkbox" id="backend" name="skills[]" value="backend">
+    <label for="backend">Software Development</label>
+
+    <br><br>
+
+    <!-- Textarea for additional skills not required -->
+    <label for="other_skills">Other Skills:</label><br>
+    <textarea id="other_skills" name="other_skills" rows="5" cols="30"></textarea>
+</fieldset><br>
+
+<!-- Submit sends form data -->
+<button type="submit">Apply</button>
+
+<fieldset>
+<footer>
+    <p>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="https://webtechteam.atlassian.net/jira/software/projects/WTP/boards/2?jql=assignee+IN+%28empty%2C+712020%3A0e8a7372-55e9-43e0-86dd-585e4fb9844a%29&atlOrigin=eyJpIjoiNzlhNGFkZTgxMzNjNGIyZTljYThmMzliYWFlYjU3NjciLCJwIjoiaiJ9" target="_blank">Jira</a> |
+        <a href="mailto:106508636@student.swin.edu.au">Email</a>
+    </p>
+</footer>
+</fieldset>
+</form>
+
+</body>
+</html>
