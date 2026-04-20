@@ -167,4 +167,6 @@ body {
   text-align: left;
 }
 
- 
+ .job-card {
+  background-color: grey;
+}
