@@ -1,0 +1,71 @@
+/* Basic page setup */
+body {
+    background-color: #262626eb;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+
+    
+}
+
+/* Center headings */
+h1 {
+    text-align: center;
+  
+}
+
+  img {
+    display: block;
+    margin: 20px auto;   /* centers it horizontally */
+    width: 300px;        /* change size here */
+}
+
+/* Simple navigation */
+nav {
+    color: white; /* Ensure nav text is visible, default web colour is blue though*/
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Space out menu items */
+nav .menu {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Form layout */
+form {
+    width: 60%;
+    margin: auto;
+}
+
+/* Space out sections */
+fieldset {
+    margin-bottom: 15px;
+}
+
+/* Make labels stack nicely */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Basic input styling */
+input, select, textarea {
+    width: 98%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+/* Keep checkboxes and radios inline */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* Simple button */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+}
