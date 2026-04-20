@@ -170,3 +170,86 @@ body {
  .job-card {
   background-color: grey;
 }
+
+
+/* ===== index page only ===== */
+
+.home-page nav ul {
+    text-align: center;
+}
+
+.home-page nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.home-page section {
+    background-color: #757775;  
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* image center */
+.home-page figure {
+    text-align: center;
+}
+
+.home-page figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* table */
+.home-page table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #dcefdc;
+}
+
+.home-page th {
+    background-color: #a5a9a5;  
+    padding: 8px;
+}
+
+.home-page td {
+    background-color: #9da69d;
+    padding: 8px;
+}
+
+.home-page table,
+.home-page th,
+.home-page td {
+    border: 1px solid #888;
+}
+
+/* search bar */
+.home-page form {
+    margin-top: 10px;
+}
+
+.home-page input[type="search"] {
+    padding: 6px;
+    border: 1px solid #aaa;
+}
+
+.home-page button {
+    padding: 6px 10px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+}
+
+.home-page button:hover {
+    background-color: #2e7d32;
+}
+
+/* text fix */
+.home-page p,
+.home-page li,
+.home-page td,
+.home-page th,
+.home-page h2,
+.home-page h3 {
+    color: #0e0e0e;
+}
